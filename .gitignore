@@ -1,0 +1,13 @@
+*.iws
+*.ipr
+.idea/*
+.gradle/*
+*/src/main/gen/
+local.properties
+*.iml
+*/build/
+build/
+out
+*.swp
+*/obj
+/libraries/protal
