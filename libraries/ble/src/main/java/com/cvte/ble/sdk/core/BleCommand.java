@@ -1,5 +1,6 @@
 package com.cvte.ble.sdk.core;
 
+import java.nio.charset.Charset;
 import java.util.Arrays;
 
 /**
@@ -13,7 +14,8 @@ public class BleCommand {
      * 获取连接蓝牙的校验的字节
      */
     public static byte[] getVerifyCommand(String imei) {
-        return imei.getBytes();
+        byte[] bytes =  imei.getBytes(Charset.defaultCharset());
+        return bytes;
     }
 
     /**
